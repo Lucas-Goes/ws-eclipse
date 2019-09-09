@@ -26,10 +26,10 @@ public class Program {
 		System.out.println("Employee: " + empl.name + ", $" + empl.netSalary());
 		
 		System.out.print("Wich percentage to increase salary? ");
-		double p = sc.nextDouble();
-		double percentage = empl.increaseSalary(p);
+		double percentage = sc.nextDouble();
+		empl.increaseSalary(percentage);
 		
-		System.out.println("Updated data: " + empl.name + ", $" + percentage);
+		System.out.println("Updated data: " + empl.name + ", $" + empl.netSalary());
 		
 		
 		

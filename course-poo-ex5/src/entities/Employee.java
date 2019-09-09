@@ -10,9 +10,10 @@ public class Employee {
 		return grossSalary - tax;
 	}
 	
-	public double increaseSalary(double percentage) {
+	public void increaseSalary(double percentage) {
 		
-		return (grossSalary - tax) + (grossSalary * percentage) / 100; 
+		grossSalary += grossSalary * percentage / 100.0;
+	 //(grossSalary - tax) + (grossSalary * percentage) / 100; 
 		
 	}
 }
